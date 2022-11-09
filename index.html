@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <metacharset="utf-8">
+        <script src="https://kit.fontawesome.com/ddcda21f38.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css\style.css"> 
+        <script defer src="js\script.js"></script> 
+        <!-- Références : 
+        https://www.w3schools.com/howto/howto_js_sidenav.asp
+        -->
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <!-- Menu de navigation à gauche -->
+        <div id="menu" class="menu">
+            <a href="javascript:void(0)" class="boutonClose" onclick="fermerMenu()">&times;</a>
+            <a href="#">ACCUEIL</a>
+            <!--<a href="#">À PROPOS</a>-->
+            <a href="#">RÉALISATIONS</a>
+            <a href="#">ME CONTACTER</a>
+        </div>
+        <!-- Tout le reste -->
+        <div id="contenu">
+            <div class="titre">PORTFOLIO DE FLORENCE C.</div>
+            <span style="font-size:3em;cursor:pointer" onclick="ouvrirMenu()" class="ouvrir">&#9776; MENU</span>
+            <!--ACCUEIL/À PROPOS-->
+            <div class="accueil">
+                <h2>ACCUEIL</h2>
+            </div>
+            <div class="contenu_accueil"><!--Présentation de moi, ce que je fais, mes outils préférés, etc. -->
+                <div class="ca1">
+                    <p>Étudiante de première année en</p> 
+                    <p class="ca1_texte">Technique de l'informatique</p> <!-- Texte spécial avec "technique de l'informatique" qui ressort comme sur le site de virginia orosa-->
+                </div>
+                <div class="ca2">
+                    <p>Je fais du design web et de la programmation en C# et JavaScript.</p>
+                    <P>Mon objectif est d'avoir un baccalauréat en génie informatique afin de diriger des projets dans une grande compagnie.</P>
+                </div>
+                <div class="ca3">Photo ici</div>
+            </div>
+            <!--RÉALISATIONS-->
+            <div class="realisations">
+                <h2>RÉALISATIONS</h2>
+            </div>
+        </div> 
+    </body>
+</html>
