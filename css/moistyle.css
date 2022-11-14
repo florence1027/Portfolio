@@ -1,1 +1,16 @@
 /* Fiche de style pour à propos de moi */
+
+/* Base de la page et variables */
+:root {
+    --couleurFond: rgb(252, 240, 242);
+    --roseAccent : rgb(224, 129, 144);
+    --roseBouton: rgb(228, 194, 198);
+    --couleurTexte : aliceblue;
+    --couleurTexte2 : rgb(207, 93, 105);
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: var(--couleurFond);
+}

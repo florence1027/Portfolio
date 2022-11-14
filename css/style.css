@@ -105,14 +105,6 @@ body {
     overflow-x: visible;
     white-space: nowrap;
     padding: 16px;
-    /*background-color: var(--couleurFond);
-    border-radius: 15px;
-    height: 90%;
-    width: 10%;
-    margin-bottom: 1%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;*/
 }
 
 
@@ -139,24 +131,34 @@ body {
     grid-row: 3 / 4;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     font-family: 'Roboto Slab', serif;
+}
+
+.boite-ca1etca2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr 0.3fr;
+    margin-left: 5%;
+    margin-top: 5%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px var(--roseBouton), -5px -5px 15px var(--roseBouton), -5px 5px 15px var(--roseBouton), 5px -5px 15px var(--roseBouton);
 }
 
 .ca1 {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     margin-left: 5%;
-    margin-bottom: 5px;
+    padding-bottom: 5px;
     color: white;
     text-shadow: -1px -1px 0 var(--roseAccent), 1px -1px 0 var(--roseAccent), -1px 1px 0 var(--roseAccent), 1px 1px 0 var(--roseAccent);
-    font-size: 2em;
+    font-size: 2em; 
 }
 
 .ca1_texte {
     color: var(--roseAccent);
     margin: 0;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
     text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
     font-size: 1.5em;
     font-weight: 900;
@@ -177,27 +179,43 @@ body {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     margin-left: 5%;
-    margin-top: 10px;
+    padding-top: 10px;
     color: var(--couleurTexte2);
     font-weight: 600;
 }
 
+
+
 .ca_href, .ca_href:visited, .ca_href:hover {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
     text-decoration: none;
     color: var(--couleurTexte2);
-    font-size: 1.4em;
+    font-size: 2em;
+    margin-left: 5%;
+}
+
+.boite-ca3 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    margin-top: 5%;
+    margin-left: 5%;
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
 }
 
 .ca3 {
-    grid-column: 2 / 3;
-    grid-row: 1 / 3;
-    margin-top: 10px;
     color: var(--couleurTexte2);
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     font-size: 2.5em;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px var(--roseBouton), -5px -5px 15px var(--roseBouton), -5px 5px 15px var(--roseBouton), 5px -5px 15px var(--roseBouton);
+    width: 80%;
+    height: 100%;
 }
 
 .fa-circle {
@@ -239,13 +257,18 @@ body {
     margin-left: 5%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .prog-titre, .design-titre { /* Ne pas oublier de rendre les 2 titres d'hauteur égale*/
     color: white;
-    text-shadow: -1px -1px 0 var(--roseAccent), 1px -1px 0 var(--roseAccent), -1px 1px 0 var(--roseAccent), 1px 1px 0 var(--roseAccent);
+    text-shadow: -1px -1px 0 rgb(203, 157, 162), 1px -1px 0 rgb(203, 157, 162), -1px 1px 0 rgb(203, 157, 162), 1px 1px 0 rgb(203, 157, 162);
     font-size: 2.5em;
+    text-align: center;
+    background-color: var(--roseBouton);
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .programmation a, .designWeb a {
@@ -261,7 +284,7 @@ body {
     margin-left: 5%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .description {
@@ -292,4 +315,17 @@ body {
     grid-column: 1 / 2;
     grid-row: 7 / 8;
     margin-top: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.email {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.reseaux {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
 }

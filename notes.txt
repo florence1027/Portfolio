@@ -1,0 +1,6 @@
+1. Peut-être que mes 2 boites dans contenu accueil pourraient se dévoiler quand on scroll pour les voir?
+    Genre "Étudiante en..." pars de la gauche pour se mettre en place et "html, css...." de la droite 
+
+2. Peut-être ajouter des images preview des projets dans "réalisations"?
+
+3. 
