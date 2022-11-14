@@ -71,7 +71,7 @@ body {
     height: auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 0.5fr 0.2fr 0.5fr 1fr 0.5fr 1fr; /*POURQUOI LES DEUX 0.2 SONT PAS ÉGAUX?????*/
+    grid-template-rows: 0.2fr 0.5fr 0.2fr 0.5fr 1fr 0.5fr 0.5fr; /*POURQUOI LES DEUX 0.2 SONT PAS ÉGAUX?????*/
 }
 
 
@@ -315,17 +315,41 @@ body {
     grid-column: 1 / 2;
     grid-row: 7 / 8;
     margin-top: 32px;
+    text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .email {
-    grid-column: 1 / 2;
+    margin-top: 10px;
+    grid-column: 1 / 3;
     grid-row: 1 / 2;
 }
+.email a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 2em;
+    color: var(--couleurTexte);
+    background-color: var(--couleurTexte2);
+    border-radius: 10px;
+}
 
-.reseaux {
+.linkedin a, .github a {
+    text-decoration: none;
+    font-size: 4em;
+    color: var(--couleurTexte);
+    padding: 15px;
+    background-color: var(--couleurTexte2);
+    border-radius: 10px;
+}
+
+.linkedin {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.github {
     grid-column: 2 / 3;
-    grid-row: 1 / 2;
+    grid-row: 2 / 3;
 }
