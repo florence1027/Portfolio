@@ -14,17 +14,17 @@
         <!-- Menu de navigation à gauche -->
         <div id="menu" class="menu">
             <a href="javascript:void(0)" class="boutonClose" onclick="fermerMenu()">&times;</a>
-            <a href="#">ACCUEIL</a>
+            <a href="#accueil">ACCUEIL</a>
             <a href="moi.html">À PROPOS</a>
-            <a href="#">RÉALISATIONS</a>
-            <a href="#">ME CONTACTER</a>
+            <a href="#realisations">RÉALISATIONS</a>
+            <a href="#contacter">ME CONTACTER</a>
         </div>
         <!-- Tout le reste -->
         <div id="contenu">
             <div class="titre">PORTFOLIO DE FLORENCE C.</div>
             <span style="font-size:3em;cursor:pointer" onclick="ouvrirMenu()" class="ouvrir">&#9776; MENU</span>
             <!--ACCUEIL/À PROPOS-->
-            <div class="accueil">
+            <div id="accueil">
                 <h2>ACCUEIL</h2>
             </div>
             <div class="contenu_accueil"><!--Présentation de moi, ce que je fais, mes outils préférés, etc. -->
@@ -55,7 +55,7 @@
                 
             </div>
             <!--RÉALISATIONS-->
-            <div class="realisations">
+            <div id="realisations">
                 <h2>RÉALISATIONS</h2>
             </div>
             <div class="contenu_realisations">      <!-- TOUT METTRE SUR GITHUB ET AJOUTER UN LIEN HYPERTEXTE POUR CHAQUE PROJET, PEUT-ÊTRE AUSSI UNE IMAGE PREVIEW DU CODE OU DE LA CONSOLE -->
@@ -73,7 +73,7 @@
                 </div>
             </div>
             <!-- ME CONTACTER -->
-            <div class="contacter">
+            <div id="contacter">
                 <h2>ME CONTACTER</h2>
             </div>
             <div class="contenu_contacter">

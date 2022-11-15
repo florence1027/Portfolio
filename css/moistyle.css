@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 /* Fiche de style pour à propos de moi */
 
 /* Base de la page et variables */
@@ -8,9 +9,150 @@
     --couleurTexte : aliceblue;
     --couleurTexte2 : rgb(207, 93, 105);
 }
+
 html, body {
     width: 100%;
     height: 100%;
     margin: 0;
     background-color: var(--couleurFond);
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+/* Menu caché à gauche. */
+.menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    background-color: var(--roseAccent);
+    /*display: flex;*/
+    flex-direction: column;
+    justify-content: space-around;
+    overflow-x: hidden; 
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+
+/* Contenu du menu */
+.menu a {
+    padding: 20px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: 700;
+    color: var(--couleurFond);
+    transition: 0.3s;
+    display: block;
+    white-space: nowrap;
+}
+
+.menu a:hover {
+    color: var(--couleurTexte);
+}
+
+.menu .boutonClose {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/* Grid pour tout sauf le menu caché */
+#contenu {
+    transition: margin-left .5s;
+    margin-top: 8px;
+    padding-top: 10px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.5fr 2fr;
+}
+
+/* Top de la page (Portfolio de Florence C.) */
+.titre {
+    font-weight: 700;
+    color: var(--couleurFond);
+    width: 50%;
+    height: 120%;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    font-size: 2.5em;
+    border-radius: 15px;
+    background-color: var(--roseBouton);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* Bouton menu */
+.ouvrir {   
+    font-weight: 700;
+    color: var(--roseAccent);
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 10%;
+    overflow-x: visible;
+    white-space: nowrap;
+    padding: 16px;
+}
+
+/* Bannière titre */
+#aPropos {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    margin-top: 3%;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.5em;
+    color: var(--couleurFond);
+    letter-spacing: 0.5em;
+    text-shadow: -1px -1px 0 var(--couleurFond), 1px -1px 0 var(--roseAccent), -1px 1px 0 var(--roseAccent), 1px 1px 0 var(--roseAccent); 
+    background-color: var(--roseAccent);
+    /*border-radius: 20px;*/    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Contenu */
+.contenu_aPropos {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+} 
+
+/* Infos générales */
+.infos {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+/* Études */
+.etudes {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+/* Intérêts professionels */
+.interetsProf {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+/* Intérêts */
+.interets {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
 }

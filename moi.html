@@ -4,10 +4,48 @@
     <head>
         <metacharset="utf-8">
         <link rel="stylesheet" href="css\moistyle.css">
-        <!-- <script defer src="js\script.js"></script> -->
+        <script defer src="js\script.js"></script>
         <title>Florence C - À propos</title>
     </head>
     <body>
-        
+        <!-- Menu de navigation à gauche -->
+        <div id="menu" class="menu">
+            <a href="javascript:void(0)" class="boutonClose" onclick="fermerMenu()">&times;</a>
+            <a href="index.html">ACCUEIL</a>
+            <a href="moi.html">À PROPOS</a>
+            <a href="index.html#realisations">RÉALISATIONS</a>
+            <a href="index.html#contacter">ME CONTACTER</a>
+        </div>
+        <div id="contenu">
+            <div class="titre">PORTFOLIO DE FLORENCE C.</div>
+            <span style="font-size:3em;cursor:pointer" onclick="ouvrirMenu()" class="ouvrir">&#9776; MENU</span>
+            <!-- Bannière présentation -->
+            <div id="aPropos">
+                <h2>À PROPOS DE MOI</h2>
+            </div>
+            <div class="contenu_aPropos">
+                <!-- Infos de base (age, d'où je viens, etc.)-->
+                <div class="infos">
+                    <p>Je m'appelle Florence ! </p>
+                    <p>J'ai 18 ans et je suis au cégep. </p>
+                    <p> Je viens de Victoriaville, au Québec.</p>
+                </div>
+                <!-- Études -->
+                <div class="etudes">
+                    <p>En ce moment, je fais une technique en informatique.</p>
+                    <p>Je veux poursuivre mes études à l'université après avoir acquérit mon DEC.</p>
+                </div>
+                <!-- Intérêts professionnels -->
+                <div class="interetsProf">
+                    <p>Quand j'aurais finit mes études, j'aimerait travailler dans une entreprise.</p>
+                    <p>J'aimerais faire de la réseautique, de la conception de logiciels ou de la création de systèmes au travail.</p>
+                </div>
+                <!-- Ce que j'aime (intérêts) -->
+                <div class="interets">
+                    <p>J'aime beaucoup jouer à des jeux de stratégie dans mon temps libre.</p>
+                    <p>J'aime aussi la lecture, les histoires de science-fiction et de magie sont mes préférés.</p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
