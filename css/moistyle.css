@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 /* Fiche de style pour à propos de moi */
 
-/* Base de la page et variables */
+                                /* Base de la page et variables */
 :root {
     --couleurFond: rgb(252, 240, 242);
     --roseAccent : rgb(224, 129, 144);
@@ -64,7 +64,7 @@ body {
 }
 
 
-/* Grid pour tout sauf le menu caché */
+                                /* Grid pour tout sauf le menu caché */
 #contenu {
     transition: margin-left .5s;
     margin-top: 8px;
@@ -72,7 +72,7 @@ body {
     height: auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 0.5fr 2fr;
+    grid-template-rows: 0.2fr 0.5fr 2fr 0.5fr 2fr;
 }
 
 /* Top de la page (Portfolio de Florence C.) */
@@ -107,7 +107,7 @@ body {
     padding: 16px;
 }
 
-/* Bannière titre */
+                                        /* Bannière titre */
 #aPropos {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
@@ -125,14 +125,14 @@ body {
     align-items: center;
 }
 
-/* Contenu */
+                                            /* Contenu */
 .contenu_aPropos {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
     margin: 3%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     color: var(--couleurTexte2);
     font-weight: 600;
     text-align: justify;
@@ -143,6 +143,7 @@ body {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     margin: 5%;
+    height: 60%;
     border-radius: 5px;
     box-shadow: 5px 5px 15px var(--roseBouton), -5px -5px 15px var(--roseBouton), -5px 5px 15px var(--roseBouton), 5px -5px 15px var(--roseBouton);
 }
@@ -156,6 +157,8 @@ body {
     grid-row: 1 / 2;
     max-height: 100%;
     margin: 5%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px var(--roseBouton), -5px -5px 15px var(--roseBouton), -5px 5px 15px var(--roseBouton), 5px -5px 15px var(--roseBouton);
 }
 
 /* Études */
@@ -163,12 +166,14 @@ body {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     margin: 5%;
+    height: 70%;
     border-radius: 5px;
     box-shadow: 5px 5px 15px var(--roseBouton), -5px -5px 15px var(--roseBouton), -5px 5px 15px var(--roseBouton), 5px -5px 15px var(--roseBouton);
 }
 
 .etudes p {
     margin: 5%;
+    line-height: 2;
 }
 
 .imgEtudes {
@@ -176,6 +181,8 @@ body {
     grid-row: 2 / 3;
     max-height: 100%;
     margin: 5%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px var(--roseBouton), -5px -5px 15px var(--roseBouton), -5px 5px 15px var(--roseBouton), 5px -5px 15px var(--roseBouton);
 }
 
 /* Intérêts professionels */
@@ -189,17 +196,124 @@ body {
 
 .interetsProf p {
     margin: 5%;
+    line-height: 2;
 }
 
-/* Intérêts */
-.interets {
+.imgProf {
     grid-column: 2 / 3;
-    grid-row: 4 / 5;
+    grid-row: 3 / 4;
+    max-height: 100%;
     margin: 5%;
     border-radius: 5px;
     box-shadow: 5px 5px 15px var(--roseBouton), -5px -5px 15px var(--roseBouton), -5px 5px 15px var(--roseBouton), 5px -5px 15px var(--roseBouton);
 }
 
-.interets p {
+                                    /* Bannière temps libre */
+#tempsLibre {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    margin-top: 3%;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.5em;
+    color: var(--couleurFond);
+    letter-spacing: 0.5em;
+    text-shadow: -1px -1px 0 var(--couleurFond), 1px -1px 0 var(--roseAccent), -1px 1px 0 var(--roseAccent), 1px 1px 0 var(--roseAccent); 
+    background-color: var(--roseAccent);   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+                                    /* Contenu temps libre */
+.contenuTempsLibre {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+    margin: 3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    color: var(--couleurTexte2);
+    font-weight: 600;
+    text-align: justify;
+}
+
+/* Jeux */
+.jeu {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
     margin: 5%;
+    height: 60%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px var(--roseBouton), -5px -5px 15px var(--roseBouton), -5px 5px 15px var(--roseBouton), 5px -5px 15px var(--roseBouton);
+}
+
+.jeu p {
+    margin: 5%;
+    line-height: 2;
+}
+
+.imgJeu {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    max-height: 100%;
+    margin: 5%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px var(--roseBouton), -5px -5px 15px var(--roseBouton), -5px 5px 15px var(--roseBouton), 5px -5px 15px var(--roseBouton);
+}
+
+/* Lecture */
+.lecture {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    margin: 5%;
+    height: 70%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px var(--roseBouton), -5px -5px 15px var(--roseBouton), -5px 5px 15px var(--roseBouton), 5px -5px 15px var(--roseBouton);
+}
+
+.lecture p {
+    margin: 5%;
+    line-height: 2;
+}
+
+.imgLecture {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    max-height: 100%;
+    margin: 5%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px var(--roseBouton), -5px -5px 15px var(--roseBouton), -5px 5px 15px var(--roseBouton), 5px -5px 15px var(--roseBouton);
+}
+
+/* Émission */
+.emission {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    margin: 5%;
+    height: 60%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px var(--roseBouton), -5px -5px 15px var(--roseBouton), -5px 5px 15px var(--roseBouton), 5px -5px 15px var(--roseBouton);
+}
+
+.emission p {
+    margin: 5%;
+    line-height: 2;
+}
+
+.imgEmission {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    max-height: 100%;
+    margin: 5%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px var(--roseBouton), -5px -5px 15px var(--roseBouton), -5px 5px 15px var(--roseBouton), 5px -5px 15px var(--roseBouton);
+}
+
+/* Sources */
+.source {
+    color: var(--roseBouton);
+    font-size: 0.8em;
+    font-style: italic;
+    text-align: start;
 }

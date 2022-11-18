@@ -193,6 +193,7 @@ body {
     color: var(--couleurTexte2);
     font-size: 2em;
     margin-left: 5%;
+    text-decoration: underline;
 }
 
 .boite-ca3 {

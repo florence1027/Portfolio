@@ -1,6 +1,3 @@
-1. Peut-être que mes 2 boites dans contenu accueil pourraient se dévoiler quand on scroll pour les voir?
-    Genre "Étudiante en..." pars de la gauche pour se mettre en place et "html, css...." de la droite 
+1. Ajouter des transitions pour la page de présentation et les boites dans accueil? 
 
 2. Peut-être ajouter des images preview des projets dans "réalisations"?
-
-3. Images à côtés de chaque paragraphe dans ma page de présentation?
